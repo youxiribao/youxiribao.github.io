@@ -3,7 +3,7 @@
 
 	<head>
 		
-<title>文章分类-游戏日报</title>
+<title>Gamer Daily-游戏日报</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -20,6 +20,9 @@
 
 	<body>
 		
+<link rel="stylesheet" href="/css/home.css">
+
+
 <link rel="stylesheet" href="/css/header.css">
 
 	<div class="header">
@@ -33,22 +36,22 @@
 				<ul>
 					
 						
-								<li>
-									<a href="/">
-										主页
-									</a>
-									<span class="dot"></span>
-								</li>
-								
-									
-						
 							<li class="select">
-								<a href="/categories">
-									栏目
+								<a href="/">
+									主页
 								</a>
 								<span class="dot"></span>
 							</li>
 							
+									
+						
+								<li>
+									<a href="/categories">
+										栏目
+									</a>
+									<span class="dot"></span>
+								</li>
+								
 									
 						
 								<li>
@@ -191,59 +194,59 @@
 		<script>
 			$(function () { $(window).scroll(function () { if ($(document).scrollTop() > 100) { $(".header-top").removeClass("header-move2"); $('.header-top').addClass('header-move1') } else { $(".header-top").removeClass("header-move1"); $('.header-top').addClass('header-move2') } }) });
 		</script>
-
-<link rel="stylesheet" href="/css/categories.css">
-
 <div class="header-bg">
-    <div class="bg-content">
-        <span>
-            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imgblogmyCategory.svg" alt="Q">
-        </span>
-        <h2>文章分类</h2>
-    </div>
+	<div class="bg-content">
+		<span>
+			<img class="site-logo" src="/image/logo.png" alt="Q">
+		</span>
+		<h2>
+			Gaming without borders.
+		</h2>
+	</div>
 </div>
-<div class="article-content">
-    <div id="article" class="content">
-        <ul class="onclickul">
-            
-            <li>
-                <div class="link">评测
-                    <svg t="1602294178324" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                        xmlns="http://www.w3.org/2000/svg" p-id="4803" width="200" height="200">
-                        <path
-                            d="M454.188 785.022c-145.192-150.177-290.378-300.353-435.422-450.526-59.842-61.836 37.327-154.021 97.313-91.899 129.23 133.647 258.318 267.296 387.548 400.868 133.646-134.287 267.436-268.574 401.083-402.934 60.84-61.123 158.011 31.060 97.244 91.971-150.105 150.89-300.279 301.703-450.454 452.521-24.933 24.934-72.666 25.575-97.311 0z"
-                            p-id="4804" fill="#3C4858"></path>
-                    </svg>
-                </div>
-                <ul class="submenu">
-                    
-                    <li><a href="/p/9771.html"> 《太空工程师》评测：真正的工科游戏</a></li>
-                    
-                    <li><a href="/p/9436.html"> 《数码方块 地球防卫军》评测：披着方块外衣的纯正EDF体验</a></li>
-                    
-                    <li><a href="/p/47230.html"> 《爆炸球：编年史》评测：年度黑马游戏</a></li>
-                    
-                    <li><a href="/p/52559.html"> 《秋叶脱物语重制版》评测：缅怀一个时代</a></li>
-                    
-                    <li><a href="/p/65176.html"> 十年之期已到，MIKU终于重回她在PC上的王座——《初音未来 歌姬计划 MegaMix Plus》评测</a></li>
-                    
-                    <li><a href="/p/38480.html"> 《昨日难留》评测：有人喜欢文艺片吗</a></li>
-                    
-                    <li><a href="/p/11250.html"> 如果把跑团做成游戏会怎么样？</a></li>
-                    
-                    <li><a href="/p/19335.html"> 希望被消除记忆后再次通关的《十三机兵防卫圈》NS版评测</a></li>
-                    
-                    <li><a href="/p/63560.html"> 看了一部5个小时的剑戟片</a></li>
-                    
-                    <li><a href="/p/85462.html"> 迷离幻像</a></li>
-                    
-                </ul>
-            </li>
-            
-        </ul>
-    </div>
+<div class="main">
+	<div class="feed">
+		
+			<div class="feed-display">
+				<a href="/p/52559.html">
+					<h2 class="feed-title">
+						《秋叶脱物语重制版》评测：缅怀一个时代
+					</h2>
+					
+						<img src="https://gamer-daily.com/images/pasted-0.png" alt="Quiet">
+						
+				</a>
+				<div class="feed-meat">
+					<div class="meat-info">
+						<div class="info-auth">
+							<a href="">
+								Gamer Daily
+							</a>
+						</div>
+						<div class="info-data">
+							2021-05-18
+						</div>
+					</div>
+					<div class="meat-type"></div>
+				</div>
+			</div>
+			
+	</div>
 </div>
-<script>$(function () { $('.article-content').addClass('content-move'); var Accordion = function (el, multiple) { this.el = el || {}; this.multiple = multiple || false; var links = this.el.find('.link'); links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown) }; Accordion.prototype.dropdown = function (e) { var $el = e.data.el; $this = $(this); $next = $this.next(); $svg = $this.children()[0]; $next.slideToggle(); $this.parent().toggleClass('open'); if (!e.data.multiple) { $el.find('.submenu').not($next).slideUp().parent().removeClass('open') } }; var accordion = new Accordion($('.onclickul'), false) });</script>
+<div class="change-page">
+	
+		<div class="p-page">
+			<a href="/">
+				<div class="previous">
+					上一页
+				</div>
+			</a>
+		</div>
+		
+			
+</div>
+
+<script>$(function () { $('.feed').addClass('move'); })</script>
 		
 <link rel="stylesheet" href="/css/food.css">
 
