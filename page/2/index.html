@@ -20,8 +20,7 @@
 
 	<body>
 		
-
-<link rel="stylesheet" href="/css/archive.css">
+<link rel="stylesheet" href="/css/home.css">
 
 
 <link rel="stylesheet" href="/css/header.css">
@@ -37,13 +36,13 @@
 				<ul>
 					
 						
-								<li>
-									<a href="/">
-										主页
-									</a>
-									<span class="dot"></span>
-								</li>
-								
+							<li class="select">
+								<a href="/">
+									主页
+								</a>
+								<span class="dot"></span>
+							</li>
+							
 									
 						
 								<li>
@@ -195,88 +194,59 @@
 		<script>
 			$(function () { $(window).scroll(function () { if ($(document).scrollTop() > 100) { $(".header-top").removeClass("header-move2"); $('.header-top').addClass('header-move1') } else { $(".header-top").removeClass("header-move1"); $('.header-top').addClass('header-move2') } }) });
 		</script>
-
 <div class="header-bg">
-    <div class="bg-content">
-        <span>
-            <img src="https://cdn.jsdelivr.net/gh/duogongneng/MyBlogImg/imgicon-remixicon.svg" alt="Q">
-        </span>
-
-        <h2>居然用了 2 年一共才写了 10 篇文章!</h2>
-    </div>
+	<div class="bg-content">
+		<span>
+			<img class="site-logo" src="/image/logo.png" alt="Q">
+		</span>
+		<h2>
+			Gaming without borders.
+		</h2>
+	</div>
 </div>
-<div class="article-content">
-    <div id="article" class="content">
-        
-        <p>
-            2022
-        </p>
-        
-        <a href="/p/18219.html">
-            <span>Retro Engine名不虚传——《索尼克：起源》评测</span>
-            <time>06-27</time>
-        </a>
-        
-        <a href="/p/65176.html">
-            <span>十年之期已到，MIKU终于重回她在PC上的王座——《初音未来 歌姬计划 MegaMix Plus》评测</span>
-            <time>06-02</time>
-        </a>
-        
-        <a href="/p/63560.html">
-            <span>看了一部5个小时的剑戟片</span>
-            <time>05-09</time>
-        </a>
-        
-        <a href="/p/19335.html">
-            <span>希望被消除记忆后再次通关的《十三机兵防卫圈》NS版评测</span>
-            <time>04-21</time>
-        </a>
-        
-        
-        <p>
-            2021
-        </p>
-        
-        <a href="/p/11250.html">
-            <span>如果把跑团做成游戏会怎么样？</span>
-            <time>10-12</time>
-        </a>
-        
-        <a href="/p/38480.html">
-            <span>《昨日难留》评测：有人喜欢文艺片吗</span>
-            <time>08-27</time>
-        </a>
-        
-        <a href="/p/47230.html">
-            <span>《爆炸球：编年史》评测：年度黑马游戏</span>
-            <time>06-11</time>
-        </a>
-        
-        <a href="/p/9436.html">
-            <span>《数码方块 地球防卫军》评测：披着方块外衣的纯正EDF体验</span>
-            <time>05-31</time>
-        </a>
-        
-        <a href="/p/9771.html">
-            <span>《太空工程师》评测：真正的工科游戏</span>
-            <time>05-31</time>
-        </a>
-        
-        <a href="/p/52559.html">
-            <span>《秋叶脱物语重制版》评测：缅怀一个时代</span>
-            <time>05-18</time>
-        </a>
-        
-        
-    </div>
+<div class="main">
+	<div class="feed">
+		
+			<div class="feed-display">
+				<a href="/p/52559.html">
+					<h2 class="feed-title">
+						《秋叶脱物语重制版》评测：缅怀一个时代
+					</h2>
+					
+						<img src="https://gamer-daily.com/images/pasted-0.png" alt="Quiet">
+						
+				</a>
+				<div class="feed-meat">
+					<div class="meat-info">
+						<div class="info-auth">
+							<a href="">
+								Gamer Daily
+							</a>
+						</div>
+						<div class="info-data">
+							2021-05-18
+						</div>
+					</div>
+					<div class="meat-type"></div>
+				</div>
+			</div>
+			
+	</div>
+</div>
+<div class="change-page">
+	
+		<div class="p-page">
+			<a href="/">
+				<div class="previous">
+					上一页
+				</div>
+			</a>
+		</div>
+		
+			
 </div>
 
-
-
-
-<script>
-    $(function () { $('.article-content').addClass('content-move'); })
-</script>
+<script>$(function () { $('.feed').addClass('move'); })</script>
 		
 <link rel="stylesheet" href="/css/food.css">
 
